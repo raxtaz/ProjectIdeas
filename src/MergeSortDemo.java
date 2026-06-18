@@ -18,7 +18,7 @@ public static void mergeSort(int[] arr)
 
 	if(arr.length - mid >= 0)
 	{
-		System.arraycopy(arr, mid, right, mid - mid, arr.length - mid);
+		System.arraycopy(arr, mid, right, 0, arr.length - mid);
 	}
 
 	mergeSort(left);
