@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MissingNumber
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int[] arr = {1, 2, 4, 5, 8, 10};
 

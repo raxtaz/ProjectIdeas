@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class LinkedListL2
 {
 
-public static void main(String[] args)
+static void main(String[] args)
 {
 
 	List<String> students = new ArrayList<>();

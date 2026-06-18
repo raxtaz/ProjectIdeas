@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class HashMapLevel2
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	HashMap<String, String> capitalCity = new HashMap<>();
 	capitalCity.put("India", "New Delhi");

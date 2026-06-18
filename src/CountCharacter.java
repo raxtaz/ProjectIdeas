@@ -1,6 +1,6 @@
 public class CountCharacter
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	String str = "Artificial Intelligence Company";
 	char ch = 'a';

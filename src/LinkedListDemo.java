@@ -2,7 +2,7 @@ import java.util.LinkedList;
 
 public class LinkedListDemo
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	// #1. Create a linked list of strings
 	LinkedList<String> cars = new LinkedList<>();

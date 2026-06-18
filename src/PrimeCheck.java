@@ -1,6 +1,6 @@
 public class PrimeCheck
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int num = 11;
 	boolean isPrime = true;

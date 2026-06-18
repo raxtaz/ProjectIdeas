@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class AnagramCheck
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	String str1 = "TomMarvoloRiddle", str2 = "IamLordVoldemort";
 	char[] arr1 = str1.toCharArray();

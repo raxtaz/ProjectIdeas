@@ -1,6 +1,6 @@
 public class PerfectNumber
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int num = 288, sum = 0;
 	for(int i = 1; i <= num / 2; i++)

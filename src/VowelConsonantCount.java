@@ -1,6 +1,6 @@
 public class VowelConsonantCount
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	String str = "Vowels gin ne ki ninja technique";
 	int vowels = 0, consonants = 0;

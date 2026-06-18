@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class HashMapLevel1
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	//1. Create a Hashmap (key:value pair)
 	HashMap<String, Integer> fruitInventory = new HashMap<>();

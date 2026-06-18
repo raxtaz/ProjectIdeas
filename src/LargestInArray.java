@@ -1,6 +1,6 @@
 public class LargestInArray
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int[] arr = {1, 3, 11, 7, 9};
 	int largest = arr[0];

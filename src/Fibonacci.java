@@ -1,6 +1,6 @@
 public class Fibonacci
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int n = 14, num1 = 0, num2 = 1;
 

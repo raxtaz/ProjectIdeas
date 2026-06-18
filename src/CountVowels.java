@@ -1,6 +1,6 @@
 public class CountVowels
 {
-    public static void main(String[] args)
+    static void main(String[] args)
     {
         String s = "Education";
         int count = 0;

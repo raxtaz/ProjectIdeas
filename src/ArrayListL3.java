@@ -17,7 +17,7 @@ public static void reverseArray(int[] arr)
 	}
 }
 
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int[] numbers = {10, 20, 30, 40, 50};
 	reverseArray(numbers);

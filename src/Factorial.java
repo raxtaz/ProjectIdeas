@@ -1,6 +1,6 @@
 public class Factorial
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	int n = 5; // Change this value to compute factorial for different numbers
 	long fact = 1;

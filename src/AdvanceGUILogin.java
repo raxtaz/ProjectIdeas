@@ -494,7 +494,7 @@ private static User authenticateUser(HashMap<String, User> db, String username, 
 	{
 		for(User u : db.values())
 		{
-			if(u.getEmail().equalsIgnoreCase(username))
+			if(u.email().equalsIgnoreCase(username))
 			{
 				user = u;
 				break;
@@ -502,7 +502,7 @@ private static User authenticateUser(HashMap<String, User> db, String username, 
 		}
 	}
 
-	if(user != null && user.getPasswordHash().equals(hashPassword(password)))
+	if(user != null && user.passwordHash().equals(hashPassword(password)))
 	{
 		return user;
 	}
@@ -608,7 +608,7 @@ private static void openDashboard(JFrame loginFrame, User user)
 {
 	loginFrame.dispose();
 
-	JFrame dashboardFrame = new JFrame("Dashboard - " + user.getUsername());
+	JFrame dashboardFrame = new JFrame("Dashboard - " + user.username());
 	dashboardFrame.setSize(700, 500);
 	dashboardFrame.setLocationRelativeTo(null);
 	dashboardFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -618,7 +618,7 @@ private static void openDashboard(JFrame loginFrame, User user)
 	panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 	panel.setBorder(new EmptyBorder(40, 40, 40, 40));
 
-	JLabel welcomeLabel = new JLabel("Welcome, " + user.getUsername() + "!");
+	JLabel welcomeLabel = new JLabel("Welcome, " + user.username() + "!");
 	welcomeLabel.setFont(new Font("Segoe UI", Font.BOLD, 24));
 	welcomeLabel.setForeground(new Color(25, 118, 210));
 	panel.add(welcomeLabel);
@@ -632,8 +632,8 @@ private static void openDashboard(JFrame loginFrame, User user)
 	infoArea.setBorder(new LineBorder(new Color(200, 200, 200)));
 	infoArea.setText(
 			"User Information:\n\n" +
-					"Username: " + user.getUsername() + "\n" +
-					"Email: " + user.getEmail() + "\n" +
+					"Username: " + user.username() + "\n" +
+					"Email: " + user.email() + "\n" +
 					"Admin: " + (user.isAdmin() ? "Yes" : "No") + "\n" +
 					"Login Time: " + getCurrentTimestamp() + "\n" +
 					"Session ID: " + generateSessionId() + "\n\n" +
@@ -646,7 +646,7 @@ private static void openDashboard(JFrame loginFrame, User user)
 	JButton logoutButton = createStyledButton("Logout", new Color(25, 118, 210));
 	logoutButton.addActionListener(e ->
 	{
-		logActivity("LOGOUT", user.getUsername());
+		logActivity("LOGOUT", user.username());
 		dashboardFrame.dispose();
 		main(new String[]{});
 	});
@@ -675,39 +675,9 @@ private static String generateSessionId()
 /**
  * User class to store user information
  */
-static class User
+record User(String username, String passwordHash, String email, boolean isAdmin)
 {
-	private final String username;
-	private final String passwordHash;
-	private final String email;
-	private final boolean isAdmin;
 
-	User(String username, String passwordHash, String email, boolean isAdmin)
-	{
-		this.username = username;
-		this.passwordHash = passwordHash;
-		this.email = email;
-		this.isAdmin = isAdmin;
-	}
 
-	String getUsername()
-	{
-		return username;
-	}
-
-	String getPasswordHash()
-	{
-		return passwordHash;
-	}
-
-	String getEmail()
-	{
-		return email;
-	}
-
-	boolean isAdmin()
-	{
-		return isAdmin;
-	}
 }
 }

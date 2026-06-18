@@ -1,6 +1,6 @@
 public class FirstNonRepeat
 {
-    public static void main(String[] args)
+    static void main(String[] args)
     {
         String s = "swiss";
         for(char c : s.toCharArray())

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class HashMapLevel3
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	HashMap<String, Integer> scores = new HashMap<>();
 	scores.put("Alice", 90);

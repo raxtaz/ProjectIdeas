@@ -13,7 +13,7 @@ Node(int data)
 
 public class LinkedListL1
 {
-public static void main(String[] args)
+static void main(String[] args)
 {
 	//Manually linking nodes
 	Node head = new Node(10);
