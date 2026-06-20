@@ -22,6 +22,6 @@ static void main(String[] args)
 			System.out.print(current + " ");
 		}
 	}
-	System.out.println("\nFull Array: " + Arrays.toString(arr));
+	System.out.println("\nOriginal Array: " + Arrays.toString(arr));
 }
 }
