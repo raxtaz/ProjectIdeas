@@ -24,8 +24,8 @@ public class SimpleMultiThreading
 		MyTask worker2 = new MyTask();
 
 		// Give them names so we can tell them apart in the output
-		//worker1.setName("Worker A");
-		//worker2.setName("Worker B");
+		worker1.setName("Worker A");
+		worker2.setName("Worker B");
 
 		// 4. Start the threads!
 		worker1.start();
