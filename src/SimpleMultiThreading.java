@@ -15,7 +15,7 @@ class MyTask extends Thread
 
 public class SimpleMultiThreading
 {
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		System.out.println("Main program started!");
 

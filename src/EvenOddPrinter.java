@@ -4,7 +4,7 @@ public class EvenOddPrinter
 	private static final int MAX_NUM = 10;
 	private static final Object lock = new Object();
 
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		Thread oddThread = new Thread(() ->
 		{
