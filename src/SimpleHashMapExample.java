@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class SimpleHashMapExample
 {
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		LinkedHashMap<String, Integer> fruitInventory = new LinkedHashMap<>();
 
