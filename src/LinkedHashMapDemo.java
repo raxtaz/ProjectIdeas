@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class LinkedHashMapDemo
 {
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>(11, 0.8f, true); //double linked list
 		linkedHashMap.put("Orange", 10);
