@@ -3,7 +3,7 @@ import java.util.WeakHashMap;
 
 public class SimpleWeakHashMap
 {
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		//Create map
 		Map<Object, String> map = new WeakHashMap<>();
