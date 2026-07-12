@@ -2,7 +2,7 @@ public class ReverseString
 {
 	static void main(String[] args)
 	{
-		String str = "Ram";
+		String str = "Rishabh";
 		StringBuilder reversed = new StringBuilder();
 
 		// Brute force approach: iterate from end to beginning
