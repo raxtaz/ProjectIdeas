@@ -1,20 +1,20 @@
 public class VowelConsonantCount
 {
-static void main(String[] args)
-{
-	String str = "Vowels gin ne ki ninja technique";
-	int vowels = 0, consonants = 0;
-	for(char c : str.toCharArray())
+	static void main(String[] args)
 	{
-		if("aeiouAEIOU".indexOf(c) != -1)
+		String str = "Vowels gin ne ki ninja technique";
+		int vowels = 0, consonants = 0;
+		for(char c : str.toCharArray())
 		{
-			vowels++;
+			if("aeiouAEIOU".indexOf(c) != -1)
+			{
+				vowels++;
+			}
+			else if(Character.isLetter(c))
+			{
+				consonants++;
+			}
 		}
-		else if(Character.isLetter(c))
-		{
-			consonants++;
-		}
+		System.out.println("Vowels: " + vowels + " Consonants: " + consonants);
 	}
-	System.out.println("Vowels: " + vowels + " Consonants: " + consonants);
-}
 }

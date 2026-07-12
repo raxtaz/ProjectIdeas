@@ -2,14 +2,14 @@ import java.util.HashSet;
 
 public class RemoveDuplicate
 {
-static void main(String[] args)
-{
-	int[] arr = {1, 2, 2, 3, 4, 4};
-	HashSet<Integer> set = new HashSet<>();
-	for(int num : arr)
+	static void main(String[] args)
 	{
-		set.add(num);
+		int[] arr = {1, 2, 2, 3, 4, 4};
+		HashSet<Integer> set = new HashSet<>();
+		for(int num : arr)
+		{
+			set.add(num);
+		}
+		System.out.println(set);
 	}
-	System.out.println(set);
-}
 }

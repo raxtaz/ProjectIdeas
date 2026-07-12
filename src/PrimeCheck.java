@@ -1,17 +1,17 @@
 public class PrimeCheck
 {
-static void main(String[] args)
-{
-	int num = 11;
-	boolean isPrime = true;
-	for(int i = 2; i <= Math.sqrt(num); i++)
+	static void main(String[] args)
 	{
-		if(num % i == 0)
+		int num = 11;
+		boolean isPrime = true;
+		for(int i = 2; i <= Math.sqrt(num); i++)
 		{
-			isPrime = false;
-			break;
+			if(num % i == 0)
+			{
+				isPrime = false;
+				break;
+			}
 		}
+		System.out.println(isPrime);
 	}
-	System.out.println(isPrime);
-}
 }

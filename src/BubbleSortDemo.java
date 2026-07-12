@@ -1,31 +1,31 @@
 public class BubbleSortDemo
 {
-public static void bubbleSort(int[] arr)
-{
-	int n = arr.length;
-	for(int i = 0; i < n - 1; i++)
+	public static void bubbleSort(int[] arr)
 	{
-		for(int j = 0; j < n - 1; j++)
+		int n = arr.length;
+		for(int i = 0; i < n - 1; i++)
 		{
-			if(arr[j] > arr[j + 1])
+			for(int j = 0; j < n - 1; j++)
 			{
-				int temp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = temp;
+				if(arr[j] > arr[j + 1])
+				{
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
 			}
 		}
 	}
-}
 
-static void main(String[] args)
-{
-	int[] arr = {5, 2, 8, 1, 9};
-
-	bubbleSort(arr);
-
-	for(int num : arr)
+	static void main(String[] args)
 	{
-		System.out.println(num + " ");
+		int[] arr = {5, 2, 8, 1, 9};
+
+		bubbleSort(arr);
+
+		for(int num : arr)
+		{
+			System.out.println(num + " ");
+		}
 	}
-}
 }

@@ -1,15 +1,15 @@
 public class PerfectNumber
 {
-static void main(String[] args)
-{
-	int num = 288, sum = 0;
-	for(int i = 1; i <= num / 2; i++)
+	static void main(String[] args)
 	{
-		if(num % i == 0)
+		int num = 288, sum = 0;
+		for(int i = 1; i <= num / 2; i++)
 		{
-			sum += i;
+			if(num % i == 0)
+			{
+				sum += i;
+			}
 		}
+		System.out.println(num == sum);
 	}
-	System.out.println(num == sum);
-}
 }

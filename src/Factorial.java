@@ -1,20 +1,20 @@
 public class Factorial
 {
-static void main(String[] args)
-{
-	int n = 5; // Change this value to compute factorial for different numbers
-	long fact = 1;
-	if(n < 0)
+	static void main(String[] args)
 	{
-		System.out.println("Factorial is not defined for negative numbers.");
-	}
-	else
-	{
-		for(int i = 1; i <= n; i++)
+		int n = 5; // Change this value to compute factorial for different numbers
+		long fact = 1;
+		if(n < 0)
 		{
-			fact *= i;
+			System.out.println("Factorial is not defined for negative numbers.");
 		}
-		System.out.println("Factorial of " + n + " is: " + fact);
+		else
+		{
+			for(int i = 1; i <= n; i++)
+			{
+				fact *= i;
+			}
+			System.out.println("Factorial of " + n + " is: " + fact);
+		}
 	}
-}
 }

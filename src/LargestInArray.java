@@ -1,16 +1,16 @@
 public class LargestInArray
 {
-static void main(String[] args)
-{
-	int[] arr = {1, 3, 11, 7, 9};
-	int largest = arr[0];
-	for(int num : arr)
+	static void main(String[] args)
 	{
-		if(num > largest)
+		int[] arr = {1, 3, 11, 7, 9};
+		int largest = arr[0];
+		for(int num : arr)
 		{
-			largest = num;
+			if(num > largest)
+			{
+				largest = num;
+			}
 		}
+		System.out.println(largest);
 	}
-	System.out.println(largest);
-}
 }
