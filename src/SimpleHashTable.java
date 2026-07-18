@@ -39,7 +39,7 @@ public class SimpleHashTable
 		}
 	}
 
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 
 		SimpleHashTable ht = new SimpleHashTable(10);
