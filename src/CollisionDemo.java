@@ -29,7 +29,7 @@ public class CollisionDemo
 		}
 	}
 
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		CollisionDemo ht = new CollisionDemo(10);
 
