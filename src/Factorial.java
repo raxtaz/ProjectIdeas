@@ -1,30 +1,20 @@
 public class Factorial
 {
-	static long computeFactorial(int n)
+	static void main(String[] args)
 	{
-		if(n < 0) throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
-		if(n == 0 || n == 1) return 1;
-
+		int n = 5; // Change this value to compute factorial for different numbers
 		long fact = 1;
-		for(int i = 2; i <= n; i++)
+		if(n < 0)
 		{
-			fact *= i;
+			System.out.println("Factorial is not defined for negative numbers.");
 		}
-		return fact;
-	}
-
-	public static void main(String[] args)
-	{
-		int n = args.length > 0 ? Integer.parseInt(args[0]) : 5;
-
-		try
+		else
 		{
-			long result = computeFactorial(n);
-			System.out.println(String.format("Factorial of %d is: %d", n, result));
-		}
-		catch(IllegalArgumentException e)
-		{
-			System.out.println(e.getMessage());
+			for(int i = 1; i <= n; i++)
+			{
+				fact *= i;
+			}
+			System.out.println("Factorial of " + n + " is: " + fact);
 		}
 	}
 }
