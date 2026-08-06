@@ -3,7 +3,7 @@ import java.util.Iterator;
 
 public class IteratorDemo
 {
-	public void main(String[] args)
+	void main(String[] args)
 	{
 		ArrayList<String> fruits = new ArrayList<>();
 		fruits.add("Apple");
