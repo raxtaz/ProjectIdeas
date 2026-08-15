@@ -3,7 +3,7 @@ import java.util.PriorityQueue;
 
 public class PriorityQueueDemo
 {
-	public static void main(String[] args)
+	static void main(String[] args)
 	{
 		//1. Default min-heap | natural order: smallest element has highest priority
 		PriorityQueue<Integer> minHeap = new PriorityQueue<>();
