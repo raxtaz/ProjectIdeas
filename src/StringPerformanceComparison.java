@@ -2,7 +2,7 @@ public class StringPerformanceComparison {
 
 	private static final int ITERATIONS = 100_000;
 
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		System.out.println("Benchmarking loop with " + ITERATIONS + " iterations:\n");
 
 		// 1. String Concatenation (+)
