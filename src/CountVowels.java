@@ -1,14 +1,10 @@
-public class CountVowels
-{
-    static void main(String[] args)
-    {
+public class CountVowels {
+    static void main(String[] args) {
         String s = "Education";
         int count = 0;
         s = s.toLowerCase();
-        for(char c : s.toCharArray())
-        {
-            if("aeiou".indexOf(c) >= 0)
-            {
+        for (char c : s.toCharArray()) {
+            if ("aeiou".indexOf(c) >= 0) {
                 count++;
             }
         }
